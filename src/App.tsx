@@ -8,7 +8,7 @@ import {useState} from "react"
 
 function App() {
     const[wordGuess, setWordGuess]=useState(()=>{
-        Math.floor(Math.random()*words.length)// index from 0 to 8 includes
+        Math.floor(Math.random()*words.length)// random index from 0 to 8 includes
     })
     const[guessLetters, setGuessLetters]=useState<string[]>([])
   return (
